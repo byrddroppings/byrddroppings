@@ -11,7 +11,8 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "surge ./public languid-trade.surge.sh"
   },
   "dependencies": {
     "gatsby": "^1.9.110",
