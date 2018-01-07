@@ -3,9 +3,14 @@ const config = require("./src/utils/siteConfig");
 module.exports = {
   siteMetadata: {
     title: "User Experience Notes 2",
-    author: "Greg Lobinski"
+    description: "A really nice description should go here",
+    author: "Greg Lobinski",
+    siteUrl: "http://languid-trade.surge.sh"
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-feed-generator'
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
